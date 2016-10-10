@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="RockPaper"> <!--produce app -->
+<head>
+	<title>Rock Paper ScissorLizard Spock !</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+</head>
+<body>
+	<div class="container" ng-controller="RockPaperCtrl"> <!--produce app -->
+		<h2>Rock Paper Scissor!</h2>
+
+		<p class = "well lead">Beat the computer by choosing either rock, paper or scissors.</p>
+
+		<label>Your choice: </label>
+		
+		<input type="radio" ng-click="toggleRock()" name="choice" value="1">Rock 
+		<input type="radio" ng-click="togglePaper()" name="choice" value="2">Paper
+		<input type="radio" ng-click="toggleScissors()" name="choice" value="3">Scissors
+		<input type="radio" ng-click="toggleLizard()" name="choice" value="4">Lizard
+		<input type="radio" ng-click="toggleSpock()" name="choice" value="5">Spock
+	
+		<button ng-click="verifyChoice()" class="btn btn-primary btn-sm">Verify</button>
+		<button ng-click="initializeGame()" class="btn btn-warning btn-sm">Restart</button>
+
+		<p>
+			<img ng-show="myVarRock" src="img/rock.jpg" >
+		</p>
+		<p>
+			<img ng-show="myVarPaper" src="img/paper.jpg" >
+		</p>
+		<p>
+			<img ng-show="myVarScissors" src="img/scissors.jpg" >
+		</p>
+		<p>
+			<img ng-show="myVarLizard" src="img/lizard.jpg" >
+		</p>
+		<p>
+			<img ng-show="myVarSpock" src="img/spock.jpg" >
+		</p>
+
+		<div ng-show="computerMove">
+			<h1>Computer</h1>
+			<img ng-show="computerRock" src="img/rock.jpg">
+			<img ng-show="computerPaper" src="img/paper.jpg">
+			<img ng-show="computerScissors" src="img/scissors.jpg">
+			<img ng-show="computerLizard" src="img/lizard.jpg">
+			<img ng-show="computerSpock" src="img/spock.jpg">
+
+		</div>
+
+		<p>
+			<p ng-show="deviation>0" class="alert alert-warning">You Win! {{ userChallenger }} beats {{ computerPlayer }}</p>
+			<p ng-show="deviation<0" class="alert alert-warning">You Lose. {{ " "+ computerPlayer + " "}} beats {{ userChallenger }}</p>
+			<p ng-show="deviation===0" class="alert alert-success">It's a tie!</p>
+		</p>
+
+		<p ng-hide="true">
+			<!--auto plays while hiding the audio for the index.html-->
+			<audio id="mySounds" controls="controls">
+	  			<source ng-show="sound" src="sounds/sample.mp3" type="audio/mpeg">
+			</audio>
+		</p>
+
+		<p ng-hide="true">
+			<!--auto plays while hiding the audio for the game.html-->
+			<audio id="myBgm" controls="controls">
+	  			<source ng-show="sound" src="sounds/sample.mp3" type="audio/mpeg">
+			</audio>
+		</p>
+ 
+	</div>
+
+<script src="js/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myApp.js"></script>
+</body>
+
+</html>

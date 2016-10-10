@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+
+	<div ng-app="" ng-controller="personController">
+		<h2>Wanna PLAY?</h2>
+		<a ng-click="toggleSounds()" href="game.html">Play!</a>
+		<p ng-hide="true">
+			auto plays while hiding the audio
+			<img src="img/paper.jpg" >
+			<audio id="mySounds" controls="controls">
+	  			<source ng-show="sound" src="sounds/sample.mp3" type="audio/mpeg">
+			</audio>
+		</p>
+	</div>
+
+	<script>
+	function personController($scope) {
+	}
+	</script>
+
+<script src="js/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myApp.js"></script>
+<script src="js/myApp2.js"></script>
+
+</body>
+</html>
