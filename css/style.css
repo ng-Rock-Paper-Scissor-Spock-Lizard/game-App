@@ -1,0 +1,87 @@
+body{
+ background: url(../img/bg.jpg);
+    background-size: cover;
+   background-color: #1f1f1f;
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+
+    
+}
+
+h1{
+    font-family: hero;
+    color: #cbcbcb;
+    display: inline-block;
+}
+
+h6{
+    font-family: hero;
+    color: #a5a5a5;
+    margin-top: -20px;
+}
+
+.carousel {
+    margin: 15px 0px 20px 10px;
+    width: 53%;
+    height: 500px;
+    background-color: transparent;
+   
+
+}
+.carousel-indicators{
+margin-left: -240px;
+margin-bottom: -100px; 
+
+}
+.item img {
+    margin: 10px 10px 20px 40px;
+    margin-top: 5%;
+    width: 70%;
+     
+}
+
+.choose{
+    height: 180px;
+    width: 180px;
+}
+
+#title{
+    margin-left: 110px;
+    
+}
+
+#play{
+    margin: 0, auto;
+    text-align: center;
+}
+
+
+h2 {
+    color: azure;
+    font-family: 'Century Gothic';
+    text-align: center;
+        
+}
+
+/* compa */
+
+
+.carousel2 {
+    margin: 15px 0px 20px 10px;
+    width: 53%;
+    height: 500px;
+    background-color: transparent;
+   
+
+}
+.carousel-indicators2{
+margin-left: -240px;
+margin-bottom: -100px; 
+
+}
+.item2 img {
+    margin: 10px 10px 20px 40px;
+    margin-top: 5%;
+    width: 70%;
+     
+}
