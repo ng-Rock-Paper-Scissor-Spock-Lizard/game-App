@@ -1,9 +1,7 @@
 html{
 z-index: -1;
-    background: url(../img/bg4.jpg);
+    background: url(../img/bg4.jpg) no-repeat center center;
     background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
