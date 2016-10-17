@@ -5,8 +5,6 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-    
 }
 
 body img{
@@ -25,6 +23,7 @@ h6{
     color: #a5a5a5;
     margin-top: -20px;
 }
+
 #on{
     float: right;
     margin-top: -650px;
@@ -32,6 +31,7 @@ h6{
     width: 40px;
     height: 70px;
 }
+
 #mute{
     float: right;
     margin-top: -650px;
@@ -39,24 +39,25 @@ h6{
     height: 70px;
     margin-right: 20px;
 }
+
 #vs{
-   
     margin-top: -30%;
     position: absolute;
     margin-left: 46%;
 }
+
 #vs img{
     height: 600px;
 }
+
 #logo{
     width: 30%;
     height: 10%;
     margin-left: 35%;
     margin-top: 10px;
-    position: fixed;
-    
-    
+    position: fixed;    
 }
+
 #play a{
 
     color: lightgray;
@@ -84,16 +85,14 @@ h6{
 
 }
 .carousel-indicators{
-
-margin-left:120px ;
+    margin-left:120px ;
     margin-bottom: -220px;
-z-index: 16;
+    z-index: 16;
 }
-.item img {
 
+.item img {
     margin-top: 5%;
     width: 495px;
-     
 }
 
 .choose{
@@ -294,15 +293,11 @@ h2 {
 /* COMPUTA */
 
 .hs-wrapper{
-
-    
     margin-left: 65%;
     margin-top: 5.5%;
     position: absolute;
-    
-    
-
 }
+
 .hs-wrapper img{
     width: 355px;
     height: 355px;
@@ -320,9 +315,11 @@ h2 {
     -ms-animation-play-state: paused;
     animation-play-state: paused;   
 }
+
  .hs-wrapper img:nth-child(1){
     z-index: 9;
 }
+
 .hs-wrapper img:nth-child(2){
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
@@ -331,6 +328,7 @@ h2 {
     animation-delay: 1s;
     z-index: 8;
 }
+
 .hs-wrapper img:nth-child(3){
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
@@ -339,6 +337,7 @@ h2 {
     animation-delay: 2s;
     z-index: 7;
 }
+
 .hs-wrapper img:nth-child(4){
     -webkit-animation-delay: 3s;
     -moz-animation-delay: 3s;
@@ -347,6 +346,7 @@ h2 {
     animation-delay: 3s;
     z-index: 6;
 }
+
 .hs-wrapper img:nth-child(5){
     -webkit-animation-delay: 4s;
     -moz-animation-delay: 4s;
@@ -363,6 +363,7 @@ h2 {
     animation-delay: 5s;
     z-index: 4;
 }
+
 .hs-wrapper img:nth-child(7){
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
@@ -372,7 +373,6 @@ h2 {
     z-index: 3;
 }
 
-
 .hs-wrapper img:nth-child(8){
     -webkit-animation-delay: 7s;
     -moz-animation-delay: 7s;
@@ -381,6 +381,7 @@ h2 {
     animation-delay: 7s;
     z-index: 2;
 }
+
 .hs-wrapper img{
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
@@ -388,6 +389,7 @@ h2 {
     -ms-animation-play-state: running;
     animation-play-state: running;
 }
+
 .hs-overlay{
     position: absolute;
     width: 100%;
@@ -403,6 +405,7 @@ h2 {
     -ms-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+
 .hs-overlay span{
     display: block;
     padding: 20px;
@@ -426,6 +429,7 @@ h2 {
     -ms-user-select: none;
     user-select: none;
 }
+
 .hs-wrapper .hs-overlay{
     opacity: 1;
     box-shadow: 0 0 0 5px rgba(255,255,255,0.3) inset;
@@ -466,12 +470,10 @@ h2 {
     100% { visibility: hidden; z-index: 0; }
 }
 
- #rock {
+#rock {
     margin-bottom: -25px;
     z-index: 16;
 }
-
-
 
 #lizard {
     z-index: 16;
@@ -479,8 +481,7 @@ h2 {
 }
 
 #scissor {
-margin-bottom: -25px;
-    
+    margin-bottom: -25px;    
 }
 
 #spock {
@@ -500,7 +501,7 @@ margin-bottom: -25px;
 }
 
 #reset {
-     z-index: 3;
+    z-index: 3;
     width: 100pt;
     padding: 25px;
     height: 30pt;
@@ -532,12 +533,10 @@ margin-bottom: -25px;
 
 .lizard {
     margin-left: 70%;
-        position: absolute;
-
+    position: absolute;
 }
 
 #banners {
-    
     margin-top: -11%;
     margin-left: 4%;
 }
@@ -546,4 +545,30 @@ margin-bottom: -25px;
     margin-left: 40%;
     height: 25%;
     width: 20%;
+}
+
+.imgOverlap {
+    position: absolute;
+    width: 500px;
+    height: 505px;
+    margin-top: -250px;
+    left: 60%;
+    margin-top: -500px;
+
+}
+
+.winLoseTie {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 17;
+   
+    -moz-animation: showMe 5s linear 0s forwards;
+    -o-animation: showMe 5s linear  0s forwards;
+    -ms-animation: showMe 5s linear 0s forwards;
+    animation: showMe 5s linear  0s forwards;  
+}
+
+#showResult{
+    z-index: -1;
 }
