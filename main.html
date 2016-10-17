@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html  ng-app="RockPaper">
 <head>
-	<img id="logo" src="img/logo3.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    	<script src="js/jq/jquery.min.js"></script>
-   	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-3.1.1.min.js"></script>
-
+   
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">  
 </head>
+	
 <body ng-controller="RockPaperCtrl">
-   
+  <img id="logo" src="img/logo3.png">
   <div>
      <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0" ng-click="RockPaperCtrl()" > <!--win-->
      <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0" ng-click="RockPaperCtrl()" > <!--lose-->
@@ -30,24 +25,23 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">How to Play?</h4>
         </div>
+	      
         <div class="modal-body">
          <!--  <video src="1.mp4" autoplay= "1" height=" 500 pt" width="750 pt"></video>  -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </div>
-      
+	      
+      </div>  
     </div>
   </div>
-  
 </div>
     
 <div >
@@ -59,8 +53,7 @@
 
 </div>
     
-    <div class="hs-wrapper">
-    
+<div class="hs-wrapper">
     <img src="img/scissors-new.png" alt="images1">
     <img src="img/lizard-new.png" alt="images2">
     <img src="img/rock-new.png" alt="images3">
@@ -69,37 +62,70 @@
     <img src="img/spock-new.png" alt="images6">
     <img src="img/scissors-new.png" alt="images7">
     <img src="img/lizard-new.png" alt="images8">
-    </div>
+</div>
+
+<div ng-show="computerMove">
+      <img ng-show="computerRock" class="imgOverlap" src="img/rock-new.png">
+      <img ng-show="computerPaper" class="imgOverlap" src="img/paper-new.png">
+      <img ng-show="computerScissors" class="imgOverlap" src="img/scissors-new.png">
+      <img ng-show="computerLizard" class="imgOverlap" src="img/lizard-new.png">
+      <img ng-show="computerSpock" class="imgOverlap" src="img/spock-new.png">
+</div>
     
 <div class="player"> 
-    
     <hr id="hr-u">      
     <p id="U"> YOU </p> 
-       
 </div>   
+	
 <div class="player">
     <hr id="hr-compa">
     <p id="Compa"> COMPA</p>
-    
 </div> 
+	
 <div>
     <button class="btn" ng-click="verifyChoice()" id="verify" > Fight </button>
     <button class="btn" ng-click="initializeGame()" id="restart"> Restart </button> 
 </div>
 
 <div class="sound">
-    
-    <img id="on" src="img/on.png">
-    <img id="mute" src="img/mute.png">
-    
+    <img id="on" src="img/on.png" onclick="enableAutoplay()">
+    <img id="mute" src="img/mute.png" onclick="disableAutoplay()">
 </div>
 
 <div id="vs">
     <img  src="img/vs.png">
 </div>
 
+    <p ng-hide="true">
+      <!--audio auto plays while hiding the audio for the index.html-->
+      <audio id="myBgm" controls="controls" loop>
+          <source ng-show="sound" src="sounds/bgm.mp3" type="audio/mpeg">
+      </audio>
+    </p>
 
+    <p ng-hide="true">
+      <!--audio auto plays while hiding the audio for the main.html-->
+      <audio id="mySfx" controls="controls">
+          <source ng-show="sound" src="sounds/sfx.mp3" type="audio/mpeg">
+      </audio>
+    </p>
 
+  <script src="js/myApp.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+  <script>
+    var audio = document.getElementById("myBgm");
+    function enableAutoplay() { 
+        audio.autoplay = true;
+        audio.load();
+    }
+
+    function disableAutoplay() { 
+        audio.autoplay = false;
+        audio.load();
+    } 
+  </script> 
 
 </body>
 </html>
