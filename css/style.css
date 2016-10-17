@@ -8,7 +8,12 @@ z-index: -1;
 }
 
 body{
-    
+    z-index: -1;
+    background: url(../img/bg4.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 
     
 }
