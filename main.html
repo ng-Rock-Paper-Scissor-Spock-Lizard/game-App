@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html  ng-app="RockPaper">
 <head>
-    
 	<img id="logo" src="img/logo3.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <script src="js/jq/jquery.min.js"></script>
-    <script type="text/javascript" src="js/angular.min.js"></script>
+    	<script src="js/jq/jquery.min.js"></script>
+   	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 
-
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">  
 </head>
-<body>
-
-    
+<body ng-controller="RockPaperCtrl">
+   
+  <div>
+     <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0" ng-click="RockPaperCtrl()" > <!--win-->
+     <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0" ng-click="RockPaperCtrl()" > <!--lose-->
+     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation===0" ng-click="RockPaperCtrl()" > <!--tie-->
+  </div>
+	
   <div class="container">
   <h2></h2>
   <!-- Trigger the modal with a button -->
@@ -82,8 +83,8 @@
     
 </div> 
 <div>
-    <button class="btn" id="verify" > Fight </button>
-    <button class="btn" id="restart"> Restart </button> 
+    <button class="btn" ng-click="verifyChoice()" id="verify" > Fight </button>
+    <button class="btn" ng-click="initializeGame()" id="restart"> Restart </button> 
 </div>
 
 <div class="sound">
