@@ -2,46 +2,40 @@
 <html>
 <head>
 	<title>ROCK-PAPER-SCISSORS-SPOCK-LIZARD</title>
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/myApp2.js"></script>
-	
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-   
-   <script type="text/javascript" src="js/myApp.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="css/bootsrap/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-   
-    
     <img class="logo" src="img/logo4.png">
 
-   <div id="banners">
-    <img class="rock" src="img/rr.png">
-    <img class="paper" src="img/p1.png">  
-    <img class="scissor" src="img/ss.png"> 
-    <img class="spock" src="img/spp.png">
-    <img class="lizard" src="img/ll.png">
+    <div id="banners">
+	<img class="rock" src="img/rr.png">
+	<img class="paper" src="img/p1.png">  
+	<img class="scissor" src="img/ss.png"> 
+        <img class="spock" src="img/spp.png">
+	<img class="lizard" src="img/ll.png">
     </div>
    
     <div id="play">
         <a href="main.html">PLAY</a>
     </div>
        
-            <script>
-    function personController($scope) {
-    }
+    <script>
+	function personController($scope) {
+	}
     </script>
 
-
     <div ng-app="" ng-controller="personController">
-                <p ng-hide="true">
+         <p ng-hide="true">
             <audio controls id="mySounds" controls="controls" loop>
                 <source ng-show="sound" src="sounds/sample.mp3" type="audio/mpeg">
             </audio>
         </p>
     </div>
+	
+     <script type="text/javascript" src="js/angular.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/myApp.js"></script>
+	
 </body>
 </html>
