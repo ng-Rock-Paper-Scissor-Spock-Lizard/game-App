@@ -8,8 +8,15 @@ var comScore = 0;
 var app = angular.module('RockPaper', []);
 app.controller('RockPaperCtrl', RockPaperCtrl);
 
+var audio = document.getElementById("mySounds");
+    audio.autoplay = true;
+    audio.load();
+
+var bgm = document.getElementById("myBgm");
+
 function RockPaperCtrl($scope){
-	$scope.user = null;
+	$scope.user = 0;
+	$scope.show = false;
 	$scope.computer = 0;
 	$scope.computerMove = false;
 	$scope.computerRock = false;
@@ -30,7 +37,7 @@ function RockPaperCtrl($scope){
         $scope.myVarPaper = false;
         $scope.myVarScissors = false;
         $scope.myVarLizard = false;
-		$scope.myVarSpock = false;
+	$scope.myVarSpock = false;
 		$scope.computerPaper = false;
 		$scope.computerRock = false;
 		$scope.computerScissors = false;
@@ -48,7 +55,7 @@ function RockPaperCtrl($scope){
         $scope.myVarScissors = false;
         $scope.myVarRock = false;
         $scope.myVarLizard = false;
-		$scope.myVarSpock = false;
+	$scope.myVarSpock = false;
 		$scope.computerPaper = false;
 		$scope.computerRock = false;
 		$scope.computerScissors = false;
@@ -189,7 +196,7 @@ function RockPaperCtrl($scope){
 			$scope.restart();
 		}
 		$scope.user = null;
-	}
+	};
 
 	$scope.restart = function() {
 		$scope.myVarRock = false;
@@ -212,10 +219,23 @@ function RockPaperCtrl($scope){
 		$scope.computer = 0;
 		$scope.user = null;
 		$scope.deviation = null;
-
 	};
+	
 	$scope.initializeGame = function() {
-		
+		bgm.autoplay = false;
+		bgm.load();
+		$scope.show = false;
+		$scope.myVarRock = false;
+		$scope.myVarPaper = false;
+		$scope.myVarScissors = false;
+		$scope.myVarLizard = false;
+		$scope.myVarSpock = false;
+		$scope.computerMove = false;
+		$scope.computerRock = false;
+		$scope.computerPaper = false;
+		$scope.computerScissors = false;
+		$scope.computerLizard = false;
+		$scope.computerSpock = false;
 		$scope.computer = Math.floor((Math.random ()*5) + 1);
 		if ($scope.computer == 1){
 			$scope.computerPlayer = "Rock";
@@ -228,8 +248,8 @@ function RockPaperCtrl($scope){
 		} else {
 			$scope.computerPlayer = "Spock";
 		}
-
+		$scope.choice = null;
 		$scope.deviation = null;
 	};
-
+	$scope.initializeGame();
 }
