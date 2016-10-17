@@ -53,9 +53,9 @@ Danalene Tuno
 
 Ronmar, Charlie – programmer (front-end)
 
-Joseph, Jvee & Mikaela – programmer (back-end)
+Joseph, Javee & Mikaela – programmer (back-end)
 
-Ramil, Aldrin, Joseph (mga gwapo ng grupo)- documentation in github and program analysts.
+Ramil, Aldrin, Joseph - documentation in github and program analysts.
 
 Danalene, Ruthille – documentation in github and researchers.
 
