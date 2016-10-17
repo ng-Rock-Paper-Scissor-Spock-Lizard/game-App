@@ -27,7 +27,8 @@ If you watch The Big Bang Theory, you may have seen the episode where Sheldon ex
     •	And as it's always been, Rock crushes scissors
 
 ##Developers
-              #Name:
+#Name:
+              
 Ronmar Calingasan  ( Leader)
 
 Ramil Sison
@@ -62,7 +63,7 @@ Charlie- graphics and user interface design.
 
 Abner-  sound and musical design.
 
- ##EMAIL
+##EMAIL
    
 Ronmar- ronmaru009@gmail.com
 
@@ -84,7 +85,8 @@ Jvee- jave21ned@gmail.com
 
 Ruthille- ruthellaTan18@gmail.com
 
-   ##Github URL:
+##Github URL:
+   
 Ronmar- @ronmaru009
 
 Ramil- @princeramil
