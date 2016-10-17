@@ -51,7 +51,7 @@ Danalene Tuno
 
 ##ROLES:
 
-Ronmar – programmer (front-end)
+Ronmar, Charlie – programmer (front-end)
 
 Joseph, Jvee & Mikaela – programmer (back-end)
 
