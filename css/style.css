@@ -1,5 +1,5 @@
-body{
-    z-index: -1;
+html{
+z-index: -1;
     background: url(../img/bg4.jpg);
     background-size: cover;
     background-attachment: scroll;
@@ -7,6 +7,10 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+body{
+    
 
     
 }
