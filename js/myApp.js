@@ -1,12 +1,12 @@
+var app = angular.module('RockPaper', []);
+app.controller('RockPaperCtrl', RockPaperCtrl);
+
 var you = document.getElementById('you');
 var com = document.getElementById('com');
 var draw = document.getElementById('draw');
 var tie = 0;
 var myScore = 0;
 var comScore = 0;
-
-var app = angular.module('RockPaper', []);
-app.controller('RockPaperCtrl', RockPaperCtrl);
 
 var audio = document.getElementById("myBgm");
     audio.autoplay = true;
