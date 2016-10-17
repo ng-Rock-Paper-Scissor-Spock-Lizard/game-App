@@ -25,19 +25,23 @@ h6{
 }
 
 #on{
+    -ms-transform: translate(0px,-800px); /* IE 9 */
+    -webkit-transform: translate(0px,-570px); /* Chrome, Safari, Opera */
+    transform: translate(0px,-570px); /* Standard syntax */
     float: right;
-    margin-top: -650px;
-    margin-right: 20px;
-    width: 40px;
-    height: 70px;
+    margin-right: 70px;
+    width: 30px;
+    height: 40px;
 }
 
 #mute{
+    -ms-transform: translate(0px,-800px); /* IE 9 */
+    -webkit-transform: translate(0px,-570px); /* Chrome, Safari, Opera */
+    transform: translate(0px,-570px); /* Standard syntax */
     float: right;
-    margin-top: -650px;
-    width: 40px;
-    height: 70px;
     margin-right: 20px;
+    width: 30px;
+    height: 40px;
 }
 
 #vs{
@@ -266,7 +270,7 @@ h2 {
     margin-left: 100px;
     width: 175%;
     margin-top: -10%;
-   z-index: 1; /*from 15*/
+    z-index: 1; /*from 15*/
 }
 
 #verify{
@@ -296,6 +300,7 @@ h2 {
     margin-left: 65%;
     margin-top: 5.5%;
     position: absolute;
+    z-index: -1;
 }
 
 .hs-wrapper img{
@@ -548,13 +553,12 @@ h2 {
 }
 
 .imgOverlap {
+    width: 355px;
+    height: 355px;
+    top: 140px;
+    left: 65%;
     position: absolute;
-    width: 500px;
-    height: 505px;
-    margin-top: -250px;
-    left: 60%;
-    margin-top: -500px;
-
+    z-index: 10;
 }
 
 .winLoseTie {
@@ -571,4 +575,8 @@ h2 {
 
 #showResult{
     z-index: -1;
+}
+
+.sound img:hover {
+        opacity: 0.6;
 }
