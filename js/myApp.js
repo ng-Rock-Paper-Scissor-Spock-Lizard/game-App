@@ -8,11 +8,11 @@ var comScore = 0;
 var app = angular.module('RockPaper', []);
 app.controller('RockPaperCtrl', RockPaperCtrl);
 
-var audio = document.getElementById("mySounds");
+var audio = document.getElementById("myBgm");
     audio.autoplay = true;
     audio.load();
 
-var bgm = document.getElementById("myBgm");
+var bgm = document.getElementById("mySfx");
 
 function RockPaperCtrl($scope){
 	$scope.user = 0;
@@ -38,14 +38,14 @@ function RockPaperCtrl($scope){
         $scope.myVarScissors = false;
         $scope.myVarLizard = false;
 	$scope.myVarSpock = false;
-		$scope.computerPaper = false;
-		$scope.computerRock = false;
-		$scope.computerScissors = false;
-		$scope.computerLizard = false;
-		$scope.computerSpock = false;
-		$scope.computerMove = false;
-		$scope.deviation = null;
-		$scope.initializeGame();
+	$scope.computerPaper = false;
+	$scope.computerRock = false;
+	$scope.computerScissors = false;
+	$scope.computerLizard = false;
+	$scope.computerSpock = false;
+	$scope.computerMove = false;
+	$scope.deviation = null;
+	$scope.initializeGame();
     };
 
     $scope.togglePaper = function() {
@@ -56,14 +56,14 @@ function RockPaperCtrl($scope){
         $scope.myVarRock = false;
         $scope.myVarLizard = false;
 	$scope.myVarSpock = false;
-		$scope.computerPaper = false;
-		$scope.computerRock = false;
-		$scope.computerScissors = false;
-		$scope.computerLizard = false;
-		$scope.computerSpock = false;
-		$scope.computerMove = false;
-		$scope.deviation = null;
-		$scope.initializeGame();
+	$scope.computerPaper = false;
+	$scope.computerRock = false;
+	$scope.computerScissors = false;
+	$scope.computerLizard = false;
+	$scope.computerSpock = false;
+	$scope.computerMove = false;
+	$scope.deviation = null;
+	$scope.initializeGame();
     };
 
     $scope.toggleScissors = function() {
@@ -71,17 +71,17 @@ function RockPaperCtrl($scope){
         $scope.myVarScissors = true;
         $scope.user = 3;
         $scope.myVarPaper = false;
-		$scope.myVarRock = false;
-		$scope.myVarLizard = false;
-		$scope.myVarSpock = false;
-		$scope.computerPaper = false;
-		$scope.computerRock = false;
-		$scope.computerScissors = false;
-		$scope.computerLizard = false;
-		$scope.computerSpock = false;
-		$scope.computerMove = false;
-		$scope.deviation = null;
-		$scope.initializeGame();
+	$scope.myVarRock = false;
+	$scope.myVarLizard = false;
+	$scope.myVarSpock = false;
+	$scope.computerPaper = false;
+	$scope.computerRock = false;
+	$scope.computerScissors = false;
+	$scope.computerLizard = false;
+	$scope.computerSpock = false;
+	$scope.computerMove = false;
+	$scope.deviation = null;
+	$scope.initializeGame();
     };
 
     $scope.toggleLizard = function() {
@@ -108,16 +108,16 @@ function RockPaperCtrl($scope){
         $scope.user = 5;
         $scope.myVarScissors = false;
         $scope.myVarPaper = false;
-		$scope.myVarRock = false;
-		$scope.myVarLizard = false;
-		$scope.computerPaper = false;
-		$scope.computerRock = false;
-		$scope.computerScissors = false;
-		$scope.computerLizard = false;
-		$scope.computerSpock = false;
-		$scope.computerMove = false;
-		$scope.deviation = null;
-		$scope.initializeGame();
+	$scope.myVarRock = false;
+	$scope.myVarLizard = false;
+	$scope.computerPaper = false;
+	$scope.computerRock = false;
+	$scope.computerScissors = false;
+	$scope.computerLizard = false;
+	$scope.computerSpock = false;
+	$scope.computerMove = false;
+	$scope.deviation = null;
+	$scope.initializeGame();
     };
 
 	$scope.verifyChoice = function () {	
@@ -173,9 +173,12 @@ function RockPaperCtrl($scope){
 				$scope.computerLizard = true;
 			}else if($scope.computer == 5){
 				$scope.computerSpock = true;
+			} else {
+				tie++;
+				$scope.deviation = 0;
 			}
-			tie++;
-			$scope.deviation = 0;
+			 $scope.computerMove = true;
+			 $scope.show = true;
 		}
 
 		if (myScore > 0 || comScore > 0 || tie > 0) {
