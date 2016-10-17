@@ -1,11 +1,17 @@
 body{
- background: url(../img/bg.jpg);
+    z-index: -1;
+    background: url(../img/bg4.jpg);
     background-size: cover;
-   background-color: #1f1f1f;
-   background-attachment: scroll;
-   background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 
 
     
+}
+
+body img{
+    height: 400px;
+    width: 160px;
 }
 
 h1{
@@ -19,32 +25,193 @@ h6{
     color: #a5a5a5;
     margin-top: -20px;
 }
+#on{
+    float: right;
+    margin-top: -650px;
+    margin-right: 20px;
+    width: 40px;
+    height: 70px;
+}
+#mute{
+    float: right;
+    margin-top: -650px;
+    width: 40px;
+    height: 70px;
+    margin-right: 20px;
+}
+#vs{
+   
+    margin-top: -30%;
+    position: absolute;
+    margin-left: 46%;
+}
+#vs img{
+    height: 600px;
+}
+#logo{
+    width: 30%;
+    height: 10%;
+    margin-left: 35%;
+    margin-top: 10px;
+    position: fixed;
+    
+    
+}
+#play a{
 
+    color: lightgray;
+    float: right;
+    margin-top: 37%;
+    margin-right: 13.99%;
+    font-family: "Segoe UI Light";
+    font-size: 50pt;
+    text-decoration: none;
+  
+
+}
+#play a:hover{
+    color: lightcoral;
+    cursor: default;
+    
+}
 .carousel {
+    z-index: ;
     margin: 15px 0px 20px 10px;
-    width: 53%;
-    height: 500px;
+    width: 20%;
+    height: 300px;
     background-color: transparent;
    
 
 }
 .carousel-indicators{
-margin-left: -240px;
-margin-bottom: -100px; 
 
+margin-left:120px ;
+    margin-bottom: -220px;
+z-index: 16;
 }
 .item img {
-    margin: 10px 10px 20px 40px;
+
     margin-top: 5%;
-    width: 70%;
+    width: 495px;
      
 }
 
 .choose{
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
+    
+}
+#s{
+   margin-top: 200px; 
+   margin-left: 135px;
+   position: absolute;
+   z-index: 4;
+   transition: .2s;
+   
+}
+#s:hover{
+    width: 200px;
+    height: 200px;
+    margin-left: 105px;
+    margin-top: 185px;
+    z-index: 6;
+    
+}
+#r{
+    margin-top: 285px;
+    margin-left: 252.5px;
+    position: absolute;
+    z-index: 3;
+    transition: .2s;    
+}
+#r:hover{
+    width: 200px;
+    height: 200px;
+    margin-left: 220px;
+    margin-top: 270px;
+    z-index: 5;
 }
 
+#l{
+    margin-top: 75px;
+    margin-left: 327.5px;
+    position: absolute;
+    z-index: 6;
+    transition: .2s;
+    
+}
+#l:hover{
+    width: 200px;
+    height: 200px;
+    margin-left: 310.5px;
+    margin-top: 50px;
+ 
+}
+
+#p{
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 367.5px;
+    z-index: 4;
+    transition: .2s;
+}
+#p:hover{
+    width: 200px;
+    height: 200px;
+    margin-left: 337.5px;
+    margin-top: 185px;
+    z-index: 6;
+}
+#sp{
+    margin-top: 70px;
+    margin-left: 187.5px;
+    position: absolute;
+    z-index: 5;
+    transition: .2s;
+}
+#sp:hover{
+     width: 200px;
+     height: 200px;
+     margin-left: 157.5px;
+     margin-top: 45px;
+    z-index: 7;
+}
+.player{
+    color: white;
+    font-family: "Segoe UI Light";
+    font-size: 50pt;
+    
+}
+#U{
+    margin-top: 33%;
+    margin-left: 270px;
+ 
+}
+#hr-u{
+    height: 10px;
+    width: 300px;
+    float:left;
+    margin-top: -1px;
+    margin-left: 190px;
+    position: absolute;
+    background-color: blanchedalmond;
+}
+
+#Compa{
+    margin-right: 175px;
+    margin-top: -105px;
+    float: right;
+    
+}
+#hr-compa{
+    height: 10px;
+    width: 300px;
+    float: right;
+    margin-top: -105px;
+    margin-left: 68%;
+    position: absolute;
+    background-color: blanchedalmond;
+}
 #title{
     margin-left: 110px;
     
@@ -63,25 +230,320 @@ h2 {
         
 }
 
-/* compa */
+#mid {
+    background-color: #6279af;
+    height: 600px;
+    width: 10%;
+    margin-left: 45%;
+    position: fixed;
+    z-index: -1;
+}
+.mid {
+    margin-top: 200pt;
+    height: 600px;
+    width: 10%;
+    margin-left: 45%;
+    position: fixed;
+}
 
+#you {
+    background-color: #0000ff;
+    margin-top: 60px;
+    height: 140px;
+    width: 50%;
+    float: left;
+}
 
-.carousel2 {
-    margin: 15px 0px 20px 10px;
-    width: 53%;
-    height: 500px;
-    background-color: transparent;
-   
+#comp {
+    background-color: #ac0000;
+    float: left;
+    margin-top: 59px;
+    height: 140px;
+    width: 50%;
+  
+}
+
+.carousel-inner {
+    margin-left: 100px;
+    width: 175%;
+    margin-top: -10%;
+   z-index: 15;
+}
+
+#verify{
+  background-color: darkcyan;
+  width: 100px;
+  font-family: "Segoe UI Light";
+  font-size: 15pt;
+  color: azure; 
+  margin-left: 640px;
+  margin-top: -200px;
+  position: absolute;
+}
+#restart{
+  background-color: darkcyan;
+  width: 100px;
+  font-family: "Segoe UI Light";
+  font-size: 15pt;
+  color: azure;
+  margin-left: 640px;
+  margin-top: -150px;
+  position: absolute;
+}
+
+/* COMPUTA */
+
+.hs-wrapper{
+
+    
+    margin-left: 65%;
+    margin-top: 5.5%;
+    position: absolute;
+    
+    
 
 }
-.carousel-indicators2{
-margin-left: -240px;
-margin-bottom: -100px; 
+.hs-wrapper img{
+    width: 355px;
+    height: 355px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    -webkit-animation: showMe 0.8s linear infinite 0s forwards;
+    -moz-animation: showMe 0.8s linear infinite 0s forwards;
+    -o-animation: showMe 0.8s linear infinite 0s forwards;
+    -ms-animation: showMe 0.8s linear infinite 0s forwards;
+    animation: showMe 0.8s linear infinite 0s forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    animation-play-state: paused;   
+}
+ .hs-wrapper img:nth-child(1){
+    z-index: 9;
+}
+.hs-wrapper img:nth-child(2){
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+    z-index: 8;
+}
+.hs-wrapper img:nth-child(3){
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+    z-index: 7;
+}
+.hs-wrapper img:nth-child(4){
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+    z-index: 6;
+}
+.hs-wrapper img:nth-child(5){
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+    z-index: 5;
+}
+.hs-wrapper img:nth-child(6){
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    animation-delay: 5s;
+    z-index: 4;
+}
+.hs-wrapper img:nth-child(7){
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    z-index: 3;
+}
+
+
+.hs-wrapper img:nth-child(8){
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    -o-animation-delay: 7s;
+    -ms-animation-delay: 7s;
+    animation-delay: 7s;
+    z-index: 2;
+}
+.hs-wrapper img{
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+.hs-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 500;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.3) inset;
+    pointer-events: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.hs-overlay span{
+    display: block;
+    padding: 20px;
+    position: absolute;
+    width: 293px;
+    left: 20px;
+    top: 200px;
+    color: #fff;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size: 38px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hs-wrapper .hs-overlay{
+    opacity: 1;
+    box-shadow: 0 0 0 5px rgba(255,255,255,0.3) inset;
+}
+
+@-webkit-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@-moz-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@-o-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@-ms-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+ #rock {
+    margin-bottom: -25px;
+    z-index: 16;
+}
+
+
+
+#lizard {
+    z-index: 16;
+    margin-bottom: -25px;
+}
+
+#scissor {
+margin-bottom: -25px;
+    
+}
+
+#spock {
+    margin-bottom: -25px;
+    z-index: 16;
+}
+
+#paper {
+    margin-bottom: -25px;
+    z-index: 16;
+}
+
+#vs img{
+    margin-top: 20px;
+    height: 100px;
+    width: 140px;
+}
+
+#reset {
+     z-index: 3;
+    width: 100pt;
+    padding: 25px;
+    height: 30pt;
+    margin-bottom: 100px;
+}
+
+.rock {
+    margin-left: 10%;
+    position: absolute;
+}
+
+.paper {
+    margin-left: 25%;
+    margin-top: 6%;
+    position: absolute;
+}
+
+.scissor {
+    margin-left: 40%;
+    margin-top: 12%;
+    position: absolute;
+}
+
+.spock {
+    margin-left: 55%;
+    margin-top: 6%;
+    position: absolute;
+}
+
+.lizard {
+    margin-left: 70%;
+        position: absolute;
 
 }
-.item2 img {
-    margin: 10px 10px 20px 40px;
-    margin-top: 5%;
-    width: 70%;
-     
+
+#banners {
+    
+    margin-top: -11%;
+    margin-left: 4%;
+}
+
+.logo {
+    margin-left: 40%;
+    height: 25%;
+    width: 20%;
 }
