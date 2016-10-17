@@ -8,23 +8,23 @@ If you watch The Big Bang Theory, you may have seen the episode where Sheldon ex
 1.	Know how to play rock, paper, scissors. This is the basis of the game.
 2.	Learn how to form the hand shape for each weapon. 
   The hand symbols are as follows:
-    •	Rock - form a fist.
-    •	Scissors - hold the hand out, with the pointer and middle finger separated; all other fingers must be in.
-    •	Paper - hold the hand out, extending all fingers.
-    •	Lizard - have the fingers out and cupped, thumb below them, to look like a sock-puppet mouth.
-    •	Spock - perform Spock's traditional Vulcan salute!
+    *	Rock - form a fist.
+    *	Scissors - hold the hand out, with the pointer and middle finger separated; all other fingers must be in.
+    *	Paper - hold the hand out, extending all fingers.
+    *	Lizard - have the fingers out and cupped, thumb below them, to look like a sock-puppet mouth.
+    *	Spock - perform Spock's traditional Vulcan salute!
 3.	Learn how each "weapon" in the game triumphs over another weapon.
   Each method can be remembered as a "rap", in the order that follows with the steps:
-    •	Scissors cut paper
-    •	Paper covers rock
-    •	Rock crushes lizard
-    •	Lizard poisons Spock
-    •	Spock smashes scissors
-    •	Scissors decapitate lizard
-    •	Lizard eats paper
-    •	Paper disproves Spock
-    •	Spock vaporizes rock
-    •	And as it's always been, Rock crushes scissors
+    *	Scissors cut paper
+    *	Paper covers rock
+    *	Rock crushes lizard
+    *	Lizard poisons Spock
+    *	Spock smashes scissors
+    *	Scissors decapitate lizard
+    *	Lizard eats paper
+    *	Paper disproves Spock
+    *	Spock vaporizes rock
+    *	And as it's always been, Rock crushes scissors
 
 ##Developers
 #Name:
