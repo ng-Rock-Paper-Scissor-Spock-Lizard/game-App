@@ -26,50 +26,82 @@ If you watch The Big Bang Theory, you may have seen the episode where Sheldon ex
     •	Spock vaporizes rock
     •	And as it's always been, Rock crushes scissors
 
-#Developers
-              Name:
+##Developers
+              #Name:
 Ronmar Calingasan  ( Leader)
+
 Ramil Sison
+
 Mikaela Aranas
+
 Aldrin Pineda
+
 Ruthille Dagdag
+
 Charlie Quiza
+
 Abner Zabala
+
 Jvee Nedia
+
 Joseph Patena
+
 Danalene Tuno
 
-#ROLES:
+##ROLES:
 
 Ronmar – programmer (front-end)
+
 Joseph, Jvee & Mikaela – programmer (back-end)
+
 Ramil, Aldrin, Joseph (mga gwapo ng grupo)- documentation in github and program analysts.
+
 Danalene, Ruthille – documentation in github and researchers.
+
 Charlie- graphics and user interface design.
+
 Abner-  sound and musical design.
 
-   #EMAIL
+ ##EMAIL
    
 Ronmar- ronmaru009@gmail.com
+
 Ramil- princeramil.sison@yahoo.com
+
 Aldrin- aldrinpineda84@yahoo.com
+
 Abner-
+
 Charlie-Lie.ruina@gmail.com
+
 Mikaella- ella4aranas@gmail.com
+
 Joseph- jpatena16@gmail.com
+
 Danalene- danalenetuno@gmail.com
+
 Jvee- jave21ned@gmail.com
+
 Ruthille- ruthellaTan18@gmail.com
 
-   #Github URL:
+   ##Github URL:
 Ronmar- @ronmaru009
+
 Ramil- @princeramil
+
 Aldrin- @Aldriiiiin
+
 Mikaella- @michaela4
+
 Ruthille- @ruthille
+
 Danalene- @dandanalene
+
 Jvee- @javened
+
 Abner- @zabalaabner
+
 Charlie- @kizaken
+
 Joseph- @sephatena
 
