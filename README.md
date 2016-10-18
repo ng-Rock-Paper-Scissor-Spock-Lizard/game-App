@@ -33,7 +33,7 @@ Ronmar Calingasan  ( Leader)
 
 Ramil Sison
 
-Mikaela Aranas
+Michaela Aranas
 
 Aldrin Pineda
 
@@ -53,7 +53,7 @@ Danalene Tuno
 
 Ronmar, Charlie – programmer (front-end)
 
-Joseph, Javee & Mikaela – programmer (back-end)
+Joseph, Javee & Michaela – programmer (back-end)
 
 Ramil, Aldrin, Joseph - documentation in github and program analysts.
 
@@ -75,7 +75,7 @@ Abner-
 
 Charlie-Lie.ruina@gmail.com
 
-Mikaella- ella4aranas@gmail.com
+Michaela- ella4aranas@gmail.com
 
 Joseph- jpatena16@gmail.com
 
@@ -93,7 +93,7 @@ Ramil- @princeramil
 
 Aldrin- @Aldriiiiin
 
-Mikaella- @michaela4
+Michaela- @michaela4
 
 Ruthille- @ruthille
 
