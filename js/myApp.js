@@ -1,3 +1,4 @@
+console.log("functional");
 var app = angular.module('RockPaper', []);
 app.controller('RockPaperCtrl', RockPaperCtrl);
 
