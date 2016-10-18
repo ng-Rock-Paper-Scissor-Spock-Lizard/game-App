@@ -24,6 +24,7 @@ function RockPaperCtrl($scope){
 	$scope.computerScissors = false;
 	$scope.computerLizard = false;
 	$scope.computerSpock = false;
+	$scope.computerTie = false;
 	$scope.myVarRock = false;
 	$scope.myVarPaper = false;
 	$scope.myVarScissors = false;
@@ -90,16 +91,16 @@ function RockPaperCtrl($scope){
         $scope.user = 4;
         $scope.myVarScissors = false;
         $scope.myVarPaper = false;
-		$scope.myVarRock = false;
-		$scope.myVarSpock = false;
-		$scope.computerPaper = false;
-		$scope.computerRock = false;
-		$scope.computerScissors = false;
-		$scope.computerLizard = false;
-		$scope.computerSpock = false;
-		$scope.computerMove = false;
-		$scope.deviation = null;
-		$scope.initializeGame();
+	$scope.myVarRock = false;
+	$scope.myVarSpock = false;
+	$scope.computerPaper = false;
+	$scope.computerRock = false;
+	$scope.computerScissors = false;
+	$scope.computerLizard = false;
+	$scope.computerSpock = false;
+	$scope.computerMove = false;
+	$scope.deviation = null;
+	$scope.initializeGame();
     };
 
     $scope.toggleSpock = function() {
@@ -176,6 +177,7 @@ function RockPaperCtrl($scope){
 			} else {
 				tie++;
 				$scope.deviation = 0;
+				$scope.computerTie = true;
 			}
 			 $scope.computerMove = true;
 			 $scope.show = true;
@@ -239,6 +241,7 @@ function RockPaperCtrl($scope){
 		$scope.computerScissors = false;
 		$scope.computerLizard = false;
 		$scope.computerSpock = false;
+		$scope.computerTie = false; 
 		$scope.computer = Math.floor((Math.random ()*5) + 1);
 		if ($scope.computer == 1){
 			$scope.computerPlayer = "Rock";
