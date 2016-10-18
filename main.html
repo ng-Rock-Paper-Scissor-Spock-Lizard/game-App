@@ -11,7 +11,6 @@
 	<script src="js/jq/jquery.min.js"></script>
   	<script src="js/jquery-3.1.1.min.js"></script>
   	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/1.2.26/angular.min.js"></script>
   	<script type="text/javascript" src="js/bootstrap.min.js"></script>
   	<script src="js/myApp.js"></script>
 </head>
@@ -21,7 +20,7 @@
   <div>
      <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0"> <!--win-->
      <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0"> <!--lose-->
-     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation==0"> <!--tie-->
+     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation===0"> <!--tie-->
   </div>
 	
   <div class="container">
