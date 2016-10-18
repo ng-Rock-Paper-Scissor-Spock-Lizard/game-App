@@ -111,7 +111,9 @@ function RockPaperCtrl($scope){
 	$scope.deviation = null;
     };
 
-	$scope.verifyChoice = function () {	
+	$scope.verifyChoice = function () {
+		bgm.autoplay = true;
+    		bgm.load();
 		$scope.computer = Math.floor((Math.random ()*5) + 1);
 		if ($scope.computer == 1){
 			$scope.computerPlayer = "Rock";
