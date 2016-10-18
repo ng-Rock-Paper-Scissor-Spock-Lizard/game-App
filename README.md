@@ -99,7 +99,7 @@ Ruthille- @ruthille
 
 Danalene- @dandanalene
 
-Jvee- @javened
+Javee- @javened
 
 Abner- @zabalaabner
 
