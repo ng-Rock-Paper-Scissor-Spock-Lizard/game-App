@@ -6,15 +6,21 @@
    
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">  
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="js/jq/jquery.min.js"></script>
+  	<script src="js/jquery-3.1.1.min.js"></script>
+  	<script type="text/javascript" src="js/angular.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  	<script src="js/myApp.js"></script>
 </head>
 	
 <body ng-controller="RockPaperCtrl">
   <img id="logo" src="img/logo3.png">
   <div>
-     <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0" ng-click="RockPaperCtrl()" > <!--win-->
-     <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0" ng-click="RockPaperCtrl()" > <!--lose-->
-     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation===0" ng-click="RockPaperCtrl()" > <!--tie-->
+     <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0"> <!--win-->
+     <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0"> <!--lose-->
+     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation==0"> <!--tie-->
   </div>
 	
   <div class="container">
@@ -117,13 +123,6 @@
           <source ng-show="sound" src="sounds/sfx.mp3" type="audio/mpeg">
       </audio>
     </p>
-
-  <script src="js/jq/jquery.min.js"></script>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/angular.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script src="js/myApp.js"></script>
-  
   
   <script>
     var audio = document.getElementById("myBgm");
