@@ -566,7 +566,7 @@ h2 {
     width: 100%;
     position: absolute;
     z-index: 17;
-   
+    -webkit-animation: showMe 5s linear 0s forwards;
     -moz-animation: showMe 5s linear 0s forwards;
     -o-animation: showMe 5s linear  0s forwards;
     -ms-animation: showMe 5s linear 0s forwards;
