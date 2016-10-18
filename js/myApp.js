@@ -191,6 +191,7 @@ function RockPaperCtrl($scope){
 				$scope.deviation = 0;
 				$scope.computerTie = true; 
 			}
+			 $scope.computerTie = true; 
 			 $scope.computerMove = true;
 			 $scope.show = true;
 		}
