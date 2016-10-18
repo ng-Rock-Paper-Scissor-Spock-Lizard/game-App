@@ -189,6 +189,7 @@ function RockPaperCtrl($scope){
 			} else {
 				tie++;
 				$scope.deviation = 0;
+				$scope.computerTie = true; 
 			}
 			 $scope.computerMove = true;
 			 $scope.show = true;
