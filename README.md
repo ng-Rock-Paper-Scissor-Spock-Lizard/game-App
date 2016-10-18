@@ -43,7 +43,7 @@ Charlie Quiza
 
 Abner Zabala
 
-Jvee Nedia
+Javee Nedia
 
 Joseph Patena
 
@@ -81,7 +81,7 @@ Joseph- jpatena16@gmail.com
 
 Danalene- danalenetuno@gmail.com
 
-Jvee- jave21ned@gmail.com
+Javee- jave21ned@gmail.com
 
 Ruthille- ruthellaTan18@gmail.com
 
