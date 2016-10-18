@@ -176,6 +176,7 @@ function RockPaperCtrl($scope){
 			$scope.myScore = $scope.myScore + 1;
 		}
 		 else if ($scope.user === $scope.computer) {
+			 $scope.deviation = 0;
 			if($scope.computer == 1){
 				$scope.computerRock = true;
 			}else if($scope.computer == 2){
