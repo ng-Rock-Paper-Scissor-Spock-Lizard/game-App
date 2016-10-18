@@ -6,21 +6,15 @@
    
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<script src="js/jq/jquery.min.js"></script>
-  	<script src="js/jquery-3.1.1.min.js"></script>
-  	<script type="text/javascript" src="js/angular.min.js"></script>
-  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-  	<script src="js/myApp.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">  
 </head>
 	
 <body ng-controller="RockPaperCtrl">
   <img id="logo" src="img/logo3.png">
   <div>
-     <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0"> <!--win-->
-     <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0"> <!--lose-->
-     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation===0"> <!--tie-->
+     <img src="img/win.png" alt="images1" class="winLoseTie" ng-show="deviation>0" ng-click="RockPaperCtrl()" > <!--win-->
+     <img src="img/lose.png" alt="images2" class="winLoseTie" ng-show="deviation<0" ng-click="RockPaperCtrl()" > <!--lose-->
+     <img src="img/tie.png" alt="images3" class="winLoseTie" ng-show="deviation===0" ng-click="RockPaperCtrl()" > <!--tie-->
   </div>
 	
   <div class="container">
@@ -76,24 +70,18 @@
       <img ng-show="computerScissors" class="imgOverlap" src="img/scissors-new.png">
       <img ng-show="computerLizard" class="imgOverlap" src="img/lizard-new.png">
       <img ng-show="computerSpock" class="imgOverlap" src="img/spock-new.png">
-	
-      <div ng-show="computerTie">
-	   <img ng-show="myVarRock" class="imgOverlap" src="img/rock-new.png">
-	   <img ng-show="myVarPaper" class="imgOverlap" src="img/paper-new.png">
-           <img ng-show="myVarScisssors" class="imgOverlap" src="img/scissors-new.png">
-	   <img ng-show="myVarLizard" class="imgOverlap" src="img/lizard-new.png">
-	   <img ng-show="myVarSpock" class="imgOverlap" src="img/spock-new.png">
-      </div>
 </div>
     
 <div class="player"> 
     <hr id="hr-u">      
-    <p id="U"> YOU </p> 
+    <p id="U"> YOU : {{myScore}} </p>
+     
 </div>   
 	
 <div class="player">
     <hr id="hr-compa">
-    <p id="Compa"> COMPA</p>
+    <p id="Compa"> COMPA : {{comScore}}</p>
+    
 </div> 
 	
 <div>
@@ -123,6 +111,13 @@
           <source ng-show="sound" src="sounds/sfx.mp3" type="audio/mpeg">
       </audio>
     </p>
+
+  <script src="js/jq/jquery.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/myApp.js"></script>
+  
   
   <script>
     var audio = document.getElementById("myBgm");
