@@ -202,7 +202,7 @@ function RockPaperCtrl($scope){
 			$scope.computerTie = true; // changes here
 		}
 
-		if ( $scope.user == null ) {
+		if ( $scope.user == 0 ) {
 			alert("You haven't choose yet!");
 			
 		} else {
