@@ -204,7 +204,7 @@ function RockPaperCtrl($scope){
 
 		if ( $scope.user == 0 ) {
 			alert("You haven't choose yet!");
-			
+			$scope.deviation = null;	
 		} else {
 			$scope.computerMove = true;
 		}
