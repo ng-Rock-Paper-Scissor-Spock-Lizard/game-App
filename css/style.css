@@ -29,7 +29,7 @@ h6{
     -webkit-transform: translate(0px,-570px); /* Chrome, Safari, Opera */
     transform: translate(0px,-570px); /* Standard syntax */
     float: right;
-    margin-right: 70px;
+    margin-right: 40px;
     width: 30px;
     height: 40px;
 }
@@ -39,9 +39,10 @@ h6{
     -webkit-transform: translate(0px,-570px); /* Chrome, Safari, Opera */
     transform: translate(0px,-570px); /* Standard syntax */
     float: right;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 40px;
     height: 50px;
+    padding-bottom: 10px;
 }
 
 #vs{
@@ -56,9 +57,9 @@ h6{
 
 #logo{
     width: 30%;
-    height: 10%;
+    height: 15%;
     margin-left: 35%;
-    margin-top: 10px;
+    margin-top: 2%;
     position: fixed;    
 }
 
@@ -187,7 +188,7 @@ h6{
 }
 #U{
     margin-top: 33%;
-    margin-left: 270px;
+    margin-left: 240px;
  
 }
 #hr-u{
@@ -201,7 +202,7 @@ h6{
 }
 
 #Compa{
-    margin-right: 175px;
+    margin-right: 133px;
     margin-top: -105px;
     float: right;
     
