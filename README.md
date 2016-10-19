@@ -107,3 +107,8 @@ Charlie- @kizaken
 
 Joseph- @sephatena
 
+#SCREENSHOTS
+![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/1.PNG)
+![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/2.PNG)
+![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/3.PNG)
+![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/4.PNG)
