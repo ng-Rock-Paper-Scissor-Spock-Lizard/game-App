@@ -197,14 +197,11 @@ function RockPaperCtrl($scope){
 			 $scope.computerTie = true; 
 			 $scope.computerMove = true;
 			 $scope.show = true;
-		} else {
-			$scope.deviation = 0;
-			$scope.computerTie = true; // changes here
 		}
 
 		if ( $scope.user == 0 ) {
 			alert("You haven't choose yet!");
-			$scope.deviation = null;	
+				
 		} else {
 			$scope.computerMove = true;
 		}
