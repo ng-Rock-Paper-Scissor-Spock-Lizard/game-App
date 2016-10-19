@@ -112,3 +112,11 @@ Joseph- @sephatena
 ![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/2.PNG)
 ![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/3.png)
 ![](https://github.com/ng-Rock-Paper-Scissor-Spock-Lizard/Webapp/blob/master/scrshots/4.png)
+
+#ANGULAR JS
+Jankenpoi was built using Angular JS, Bootstrap CSS and HTML.
+With this, the team has created an improved rock-paper-scissor game with a whole new twist and touch.
+
+Angular JS and its directives has made a lot of beautification in the game, specially it's functionality.
+and because of this whole new functions and script, this game has been made.
+
